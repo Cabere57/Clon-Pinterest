@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+form {
+    flex-grow: 1;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem 1.4rem;
+    border-radius: 100px;
+    background: rgba(220, 220, 220, 0.3);
+    font-size: 1em;
+}
+
+input:focus {
+    outline: none;
+}
+
+img { 
+    vertical-align: middle;
+}
+
+button {
+    background: transparent;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+} 
+
+.btn-icono {
+    display: inline-block; 
+    border-radius: 100%;  
+    padding: 0.5rem; 
+}
+
+.btn-icono:hover {
+    background-color: rgba(220, 220, 220, 0.3);
+}
+
+.btn-link {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.6rem 1rem;
+    border-radius: 100px;
+}
+
+.btn-link.active {
+    background-color: black;
+    color: white;
+}
+
+.btn-perfil {
+   width: 40px;
+   height: 40px;
+}
+
+.perfil {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.perfil img {
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+    padding: 1rem;
+}
+
+main aside {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: flex-start;
+    gap: 1rem;
+}
+
+main img {
+    width: 100%;
+}
+
+.card {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+} 
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    transition: opacity ease 200ms;
+}
+
+.btn-guardar {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: red;
+    color: white;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.inner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%; 
+    padding: 1.5rem;
+}
+
+.inner-card-header {
+    text-align: right;
+}
+
+.inner-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 5px;
+}
+
+.btn-descarga {
+    background: rgba(255, 255, 255, 0.5);
+    border: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.btn-puntos {
+    background: rgba(255, 255, 255, 0.5);
+    border: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
